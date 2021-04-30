@@ -1,7 +1,6 @@
 from os import path
 import requests
 from itertools import combinations
-import numpy as np
 
 # bottom-up dynamic programming approach
 def calculate_tsp(adjacency_matrix) -> tuple:
