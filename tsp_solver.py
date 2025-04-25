@@ -73,7 +73,7 @@ def get_zips_from_file() -> list:
 def generate_distance_matrix(num_points, zips) -> list:
     print("Gathering distance data from Google's distance matrix API...")
     url ='https://maps.googleapis.com/maps/api/distancematrix/json?' # the url that you send request to
-    api_key = "AIzaSyCMGwIHcaHwEYjeY_BV1vNJzyx9-eoWmJ4" # this is how google knows we are authenticated to use this API
+    api_key = "" # this is how google knows we are authenticated to use this API
 
     #generate the empty distance matrix, if the number of zips is 7, this line will produce a 7x7 2d array of 0's
     #distance_matrix = [[DistanceMatrixPoint() for col in range(num_points)] for row in range(num_points)] 
